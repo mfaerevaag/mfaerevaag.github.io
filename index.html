@@ -11,7 +11,7 @@
 
   <body>
     <header>
-        <img src="assets/images/avatar.png" alt="Avatar" />
+        <img src="assets/images/avatar.png" alt="Avatar" id="logo" />
 
         <div class="social">
 				  <a class="social-button github-button" href="https://github.com/mfaerevaag" target="_blank" title="Github"></a>
@@ -20,23 +20,27 @@
 			  </div>
     </header>
 
-    <div class="main">
+    <div class="main nav">
       <ul class="nav nav-tabs nav-stacked">
         <li>
-          <a href="http://blog.faerevaag.no">Blog</a>
-        </li>
-        <li class="disabled">
-          <a href="#">Curriculum Vitae</a>
+          <a href="http://blog.faerevaag.no">
+            Blog <span class="badge">0</span>
+          </a>
         </li>
         <li>
-          <a href="mailto:hello@faerevaag.no?Subject=Hi%20there!" target="_blank">Contact</a>
+          <a href="cv.html">
+            Curriculum Vitae <span class="label label-important">Alpha</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:markus@faerevaag.no?Subject=Hi%20there!" target="_blank">Contact me</a>
         </li>
       </ul>
     </div>
 
     <footer>
       <small>
-        © Copyright Faerevaag Consulting 2013
+        © Faerevaag Consulting 2013
       </small>
     </footer>
   </body>

@@ -1,16 +1,18 @@
 html, body {
   height: 100%;
   background-color: #f3f3f3;
-  text-align: center;
 }
 
 header {
   margin-bottom: 50px;
+  text-align: center;
+  margin-top: 0px;
 }
 
-header img {
-  position: relative;
-  margin-top: -8px;
+#headshot {
+  width: 90%;
+  border: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .social {
@@ -24,19 +26,56 @@ header img {
   background-repeat: no-repeat;
   margin: 0 10px 0 10px;
 }
+
 .linkedin-button { background-image: url("../images/linkedin-black-compressed.png"); }
 .twitter-button { background-image: url("../images/twitter-black-compressed.png"); }
 .github-button { background-image: url("../images/github-black-compressed.png"); }
 
+.sidebar {
+  float: left;
+  position: fixed;
+  height: 100%;
+  width: 220px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  background-color: white;
+  border-right: 1px solid gray;
+  z-index:1;
+}
+
 .main {
-  width: 200px;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -30px;
 }
 
+.content {
+  position: relative;
+  text-align: justify;
+  padding: 30px 60px 30px 290px;
+}
+
+.content p {
+  margin: 0 0 25px 20px;
+}
+
+.technical {
+  margin-top: 60px;
+}
+
+.side-by-side {
+  float: left;
+  text-align: left;
+  margin-right: 10px;
+}
+
 .nav {
+  width: 200px;
+  text-align: center;
+}
+
+.nav-tabs {
   background-color: white;
 }
 
@@ -46,4 +85,5 @@ footer {
   bottom: 0;
   height: 30px;
   color: grey;
+  text-align: center;
 }
