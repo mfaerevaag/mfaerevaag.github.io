@@ -11,7 +11,7 @@
 
   <body>
     <div class="sidebar">
-      <img src="assets/images/headshot.jpg" alt="Avatar" id="headshot" />
+      <img src="assets/images/headshot.jpg" alt="Avatar" class="img-rounded" id="headshot" />
 
       <div class="info">
         <p class="lead">
@@ -30,48 +30,141 @@
 				<a class="social-button twitter-button" href="https://twitter.com/mfaerevaag" target="_blank" title="Twitter"></a>
 			</div>
 
-      <div class="technical">
-        <div class="side-by-side">
-          <small>
-            <strong>Languages</strong>
-            <ul>
-              <li>Java</li>
-              <li>Objective-C</li>
-              <li>Ruby</li>
-            </ul>
-          </small>
-        </div>
-        <div class="side-by-side">
-          <small>
-            <strong>Frameworks</strong>
-            <ul>
-              <li>Ruby on Rails</li>
-              <li>Node.js</li>
-            </ul>
-          </small>
-        </div>
+      <div class="personal-info">
+        <address>
+          <strong>Finsensvej 36C 2.TV</strong><br>
+          2000 Frederiksberg<br>
+          Copenhagen, Denmark<br>
+          <br>
+          <abbr title="Phone">P:</abbr> (+45) 911 98 584<br>
+          <abbr title="Phone">P:</abbr> (+47) 482 81 240<br>
+          <abbr title="Email">E:</abbr> <a href="mailto:markus@faerevaag.no" target="_blank">markus@faerevaag.no</a><br>
+        </address>
       </div>
     </div>
 
+    <!-- Main -->
     <div class="main content">
-      <h1>Profile</h1>
-      <p>
-        In hac habitasse platea dictumst. Praesent mollis accumsan orci euismod tempus. Donec sit amet turpis non risus mattis fringilla vel eu eros. In mollis lectus nisi, eu lacinia massa egestas vitae. Donec at turpis et odio lacinia vulputate a in neque. Nulla ornare placerat lacus vitae tristique. Sed eu dui et orci consequat tincidunt.
-      </p>
-      <hr>
-      <h1>Experience</h1><p>
-        In hac habitasse platea dictumst. Praesent mollis accumsan orci euismod tempus. Donec sit amet turpis non risus mattis fringilla vel eu eros. In mollis lectus nisi, eu lacinia massa egestas vitae. Donec at turpis et odio lacinia vulputate a in neque. Nulla ornare placerat lacus vitae tristique. Sed eu dui et orci consequat tincidunt.
-      </p>
-      <hr>
-      <h1>Education</h1><p>
-        In hac habitasse platea dictumst. Praesent mollis accumsan orci euismod tempus. Donec sit amet turpis non risus mattis fringilla vel eu eros. In mollis lectus nisi, eu lacinia massa egestas vitae. Donec at turpis et odio lacinia vulputate a in neque. Nulla ornare placerat lacus vitae tristique. Sed eu dui et orci consequat tincidunt.
-      </p>
-    </div>
+      <div>
+        <a href="index.html" class="btn pull-left">
+          <i class="icon-arrow-left"></i> Back
+        </a>
+        <p class="lead text-center" id="title">
+          Curriculum Vitae
+        </p>
+        <a href="https://github.com/mfaerevaag/portfolio">
+          <img class="ribbon" src="assets/images/forkme.png" alt="Fork me on GitHub">
+        </a>
+      </div>
+      <br>
+      <br>
 
-    <footer>
-      <small>
-        © Faerevaag Consulting 2013
-      </small>
-    </footer>
+      <h1>Profile</h1>
+      <div class="profile side-by-side">
+        <p class="pull-left">
+          Vivamus lacinia, nulla in condimentum vulputate, elit lorem auctor leo, sed egestas magna tortor a odio. Morbi a magna eu felis ultrices lacinia. Nulla sed placerat purus. Pellentesque ac massa id est pellentesque aliquet. Vestibulum et sagittis risus. Donec eleifend urna eu scelerisque venenatis. Suspendisse sed tellus at tortor hendrerit rhoncus a id ligula.
+        </p>
+      </div>
+      <blockquote class="pull-right">
+        <p>Simplicity is the ultimate sophistication.</p>
+        <small>Leonardo da Vinci</small>
+      </blockquote>
+      <div class="clearfix"></div>
+      <hr>
+
+      <h1>Experience</h1>
+      <div class="experience">
+        <dl class="dl-horizontal">
+          <dt>BIT BLUEPRINT</dt>
+          <dd>
+            <p class="pull-right"><em>Okt. 2013 - current</em></p>
+            <p>
+              Open Source Developer<br>
+              <small class="muted">Copenhagen, Denmark</small>
+            </p>
+            <p>
+              TODO: BIT BLUEPRINT is a company that values openness. I exclusively write open source code, with open data, technologies, innovation, and all other paradigms that come with it. I have worked on projects both inhouse and for external clients.
+            </p>
+          </dd>
+          <dt>Norwegian Armed Forces</dt>
+          <dd>
+            <p class="pull-right"><em>2010 - 2011</em></p>
+            <p>
+              Corporal, Military Police<br>
+              <small class="muted">Rena, Norway</small>
+            </p>
+          </dd>
+        </dl>
+        <p>
+          <span class="label label-info">Info</span>
+          For references, please contact me and I'll be happy to give them to you.
+        </p>
+      </div>
+      <hr>
+
+      <h1>Technical</h1>
+      <div class="technical">
+        <div class="side-by-side pull-left" id="languages">
+          <strong>Languages</strong>
+          <ul>
+            <li class="text-success">Java</li>
+            <li class="text-success">Objective-C</li>
+            <li class="text-success">Ruby</li>
+            <li class="text-warning">Python</li>
+            <li class="text-warning">PHP</li>
+            <li class="text-warning">JavaScript</li>
+            <li class="text-warning">Common Lisp</li>
+            <li class="text-warning">Shell</li>
+          </ul>
+        </div>
+        <div class="side-by-side" id="frameworks">
+          <strong>Frameworks & Libraries</strong>
+          <ul>
+            <li class="text-success">Ruby on Rails</li>
+            <li class="text-success">Twitter Bootstrap</li>
+            <li class="text-warning">Django</li>
+            <li class="text-warning">jQuery</li>
+            <li class="text-warning">Node.js</li>
+          </ul>
+        </div>
+        <div class="side-by-side pull-right" id="databases">
+          <strong>Databases</strong>
+          <ul>
+            <li class="text-success">MySQL</li>
+            <li class="text-success">SQLite</li>
+            <li class="text-warning">MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <p>
+        <ul class="inline">
+          <li>
+            <span class="label label-info">Info</span>
+            Color legend:
+          </li>
+          <li>Green - fluent</li>
+          <li>Yellow - proficient</li>
+        </ul>
+      </p>
+      <hr>
+
+      <h1>Education</h1>
+      <div class="education">
+        <dl class="dl-horizontal">
+          <dt class="text-overflow">Technical University of Denmark</dt>
+          <dd>
+            <p class="pull-right"><em>Sept. 2012 - current</em></p>
+            <p>
+              Software Technology, Civ. Eng.<br>
+              <small class="muted">Copenhagen, Denmark</small>
+            </p>
+            <p>
+              Specializing in programming and security.
+            </p>
+          </dd>
+        </dl>
+      </div>
+    </div>
   </body>
 </html>

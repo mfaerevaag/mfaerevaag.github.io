@@ -9,6 +9,10 @@ header {
   margin-top: 0px;
 }
 
+#title {
+  font-size: 4em;
+}
+
 #headshot {
   width: 90%;
   border: 1px solid black;
@@ -17,7 +21,7 @@ header {
 
 .social {
   margin-top: 40px;
-  margin-bottom: -30px;
+  margin-bottom: 30px;
 }
 
 .social-button {
@@ -26,10 +30,16 @@ header {
   background-repeat: no-repeat;
   margin: 0 10px 0 10px;
 }
-
 .linkedin-button { background-image: url("../images/linkedin-black-compressed.png"); }
 .twitter-button { background-image: url("../images/twitter-black-compressed.png"); }
 .github-button { background-image: url("../images/github-black-compressed.png"); }
+
+.ribbon {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0;
+}
 
 .sidebar {
   float: left;
@@ -43,6 +53,24 @@ header {
   z-index:1;
 }
 
+.personal-info {
+  text-align: left;
+}
+
+.nav {
+  width: 200px;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.nav-tabs {
+  background-color: white;
+}
+
+.side-by-side {
+  display: inline-block;
+}
+
 .main {
   min-height: 100%;
   height: auto !important;
@@ -51,32 +79,26 @@ header {
 }
 
 .content {
-  position: relative;
   text-align: justify;
   padding: 30px 60px 30px 290px;
 }
 
-.content p {
-  margin: 0 0 25px 20px;
+.profile p {
+  margin-left: 20px;
 }
 
 .technical {
-  margin-top: 60px;
+  padding-left: 30px;
 }
 
-.side-by-side {
-  float: left;
-  text-align: left;
-  margin-right: 10px;
+.technical div {
+  width: 33%;
 }
 
-.nav {
-  width: 200px;
-  text-align: center;
-}
+#frameworks { overflow: hidden; }
 
-.nav-tabs {
-  background-color: white;
+.dl-horizontal dt {
+  white-space: normal;
 }
 
 footer {
