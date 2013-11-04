@@ -87,6 +87,14 @@ header {
   margin-left: 20px;
 }
 
+.main dd {
+  margin-bottom: 30px;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+}
+
 .technical {
   padding-left: 30px;
 }
